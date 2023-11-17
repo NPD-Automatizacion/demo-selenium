@@ -34,11 +34,12 @@ public final class Report {
 	private String testId;
 
 	private static final String fs = File.separator;
-	private static final String currentTime = new SimpleDateFormat("yyyy/MM/dd_HH:mm:ss").format(new Date())
-			.replace(":", ".").replace("/", "-");
+	// private static final String currentTime = new SimpleDateFormat("yyyy/MM/dd_HH:mm:ss").format(new Date())
+	// 		.replace(":", ".").replace("/", "-");
+	private static final String outputName = "resultados";
 	private static final String REPORTCONFIG_FILE = "." + fs + "src" + fs + "test" + fs + "resources" + fs
 			+ "defaultData" + fs + "reportconfig.xml";
-	private static final String OUTPUT_FOLDER = "." + fs + "target" + fs + "logs" + fs + currentTime + fs;
+	private static final String OUTPUT_FOLDER = "." + fs + "target" + fs + "logs" + fs + outputName + fs;
 
 	public Report() throws IOException {
 		String FILE_NAME = "report.html";
